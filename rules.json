@@ -1,0 +1,34 @@
+{
+  "dns" : {
+    "disableCache" : false,
+    "disableFallback" : false,
+    "disableFallbackIfMatch" : false,
+    "queryStrategy" : "UseIP",
+    "servers" : [
+      {
+        "address" : "8.8.8.8",
+        "skipFallback" : false
+      }
+    ]
+  },
+  "routing" : {
+    "domainStrategy" : "AsIs",
+    "rules" : [
+      {
+        "domain" : [
+          "ext:shared.dat:SHARED"
+        ],
+        "ext" : {
+          "name" : "bypass"
+        },
+        "outboundTag" : "proxy",
+        "protocol" : [
+          "http",
+          "tls",
+          "bittorrent"
+        ],
+        "type" : "field"
+      }
+    ]
+  }
+}
