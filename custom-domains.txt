@@ -1,0 +1,5 @@
+myip.com @myip
+img.youtube.com @YT-thumbnails
+i.ytimg.com @YT-thumbnails
+i3.ytimg.com @YT-thumbnails
+yt3.ggpht.com @YT-thumbnails
